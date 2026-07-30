@@ -15,7 +15,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    runs-on: self-runner
+    runs-on: runner-1
     steps:
       - uses: actions/checkout@v4
 
