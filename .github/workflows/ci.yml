@@ -40,6 +40,6 @@ jobs:
           sudo apt-get -y update
           sudo apt-get -y install trivy
       - name: trivy scan
-        run: trivy scan . --format json --output trivy-report.json
+        run: trivy scan . --format json --output trivy-report.json .
       - name: gitleaks scan
         run: gitleaks detect --source . --report-format json --report-path gitleaks-report.json
