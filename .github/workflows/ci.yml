@@ -26,3 +26,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: compile java application
         run: mvn compile
+      - name: test java application
+        run: mvn test
